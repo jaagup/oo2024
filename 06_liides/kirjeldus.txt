@@ -1,0 +1,1 @@
+Omaloodud liides või liideste komplekt. Realiseerivad klassid. Näitprogramm

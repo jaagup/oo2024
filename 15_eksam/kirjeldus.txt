@@ -1,0 +1,6 @@
+Eksamiks tuleb ette valmistada struktueeritud ja soovitavalt objektorienteeritud programm.
+
+Suvepraktikal osalejatel on soovitav esitada lõik oma praktikatööst. 
+Rühmas koostatud rakenduse korral peab esitajal olema suurema rakenduse hulgas omale lähedalt tuttav koodiosa. 
+
+Esitatud koodilõik ei pea pärast praktikatöö juures täpselt samal kujul sisse jääma. 
