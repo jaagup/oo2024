@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle Control</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Auto liides</h1>
+    <button id="startBtn" class="button">Start</button>
+    <button id="stopBtn" class="button">Stop</button>
+    <button id="accelerateBtn" class="button">Kiirenda</button>
+    <button id="brakeBtn" class="button">Peata</button>
+  </div>
+
+  <script>
+
+class Vehicle {
+  start() {
+      console.log("Sõiduk käivitatud");
+  }
+
+  stop() {
+      console.log("Sõiduk peatatud");
+  }
+
+  accelerate() {
+      console.log("Sõiduk kiirendab");
+  }
+
+  brake() {
+      console.log("Sõiduk pidurdab");
+  }
+}
+
+class Car extends Vehicle {
+      constructor(make, model) {
+          super();
+          this.make = make;
+          this.model = model;
+      }
+}
+
+    // Example usage
+    const myCar = new Car("Toyota", "Camry");
+
+    document.getElementById("startBtn").addEventListener("click", function() {
+      myCar.start();
+    });
+
+    document.getElementById("stopBtn").addEventListener("click", function(){
+      myCar.stop();
+    })
+
+
+    document.getElementById("accelerateBtn").addEventListener("click", function() {
+      myCar.accelerate();
+    });
+
+    document.getElementById("brakeBtn").addEventListener("click", function() {
+      myCar.brake();
+    });
+  </script>
+</body>
+</html>
